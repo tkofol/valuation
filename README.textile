@@ -1,4 +1,4 @@
-h1. Ruby Valuation
+h1. Valuation
 
 A Corporate Finance Gem
 
