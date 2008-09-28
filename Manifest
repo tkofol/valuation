@@ -1,7 +1,8 @@
 History.txt
+lib/valuation.rb
 License.txt
+Manifest
 Rakefile
 README.textile
 test/test_helper.rb
-test/test_ruby-valuation.rb
-Manifest
+test/test_valuation.rb
