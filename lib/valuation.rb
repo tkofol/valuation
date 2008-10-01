@@ -1,10 +1,11 @@
 module Valuation
   
-  def perpetuity(a, r)
-    a / r.to_f
+  def perpetuity(c, i, g=0)
+    c / (i-g).to_f
   end
   
-  def growing_perpetuity(a, r, g)
-    a / (r-g).to_f
+  def annuity(c, i, n)
+    c * (1/i) * (1 - (1/(1+i)) ** n)
   end
+  
 end
