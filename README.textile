@@ -1,6 +1,7 @@
 h1. Valuation
 
-A Corporate Finance Gem
+A Corporate Finance Ruby Gem. For those of you who are sick of using excel for all your finance calculations. Now there is an alternative for you Ruby hackers.
 
 h2. Features
+
 

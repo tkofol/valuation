@@ -1,4 +1,7 @@
+$:.unshift File.dirname(__FILE__)     # For use/testing when no gem is installed
 require 'valuation/cash_flows'
+require 'valuation/core_ext'
+require 'valuation/interest_rate'
 
 module Valuation
   
@@ -29,5 +32,18 @@ module Valuation
       pv * (1+i) ** n
     end
   end
+  
+  # Returns the present value of a stream of cash flows
+  # that have an interest rate r
+  # c = Array of cash flows
+  # r = intrest rate as a decimal
+  def npv(c, r)
+    npv=0
+    c.each_with_index do |c_t,t|
+      npv += c_t.to_f / (1.0+r)**t.to_f
+    end
+    npv
+  end
+  
   
 end

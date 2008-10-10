@@ -29,4 +29,8 @@ class TestValuation < Test::Unit::TestCase
   def test_future_value_growing_annuity
     assert_in_delta 102.69, annuity(10, 0.10, 7, :g => 0.03, :pv => false), 0.01
   end
+  
+  def test_npv
+    assert_in_delta 24.86965, npv([0,10,10, 10], 0.10), 0.01
+  end
 end
