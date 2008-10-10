@@ -1,8 +1,13 @@
 History.txt
+lib/valuation/cash_flows.rb
+lib/valuation/core_ext.rb
+lib/valuation/interest_rate.rb
 lib/valuation.rb
 License.txt
 Manifest
 Rakefile
 README.textile
+test/test_cash_flows.rb
 test/test_helper.rb
+test/test_interest_rate.rb
 test/test_valuation.rb

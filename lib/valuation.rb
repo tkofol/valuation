@@ -35,6 +35,7 @@ module Valuation
   
   # Returns the present value of a stream of cash flows
   # that have an interest rate r
+  #
   # c = Array of cash flows
   # r = intrest rate as a decimal
   def npv(c, r)
