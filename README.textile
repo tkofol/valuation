@@ -4,4 +4,19 @@ A Corporate Finance Ruby Gem. For those of you who are sick of using excel for a
 
 h2. Features
 
+* Calculate the NPV, FV or IRR of a series of cash flows
+* Convert interest rates from different time periods (APR, EAR)
+* Access functions for Annuity, Perpetuity
+
+h2. Examples
+
+>>require 'valuation'
+
+>>include Valuation
+
+*Cash Flows*
+
+>> CashFlows.new([10,10,10], :i => 0.10).present_value
+
+=> 27.3553719008264
 
