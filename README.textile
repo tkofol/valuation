@@ -10,13 +10,48 @@ h2. Features
 
 h2. Examples
 
->>require 'valuation'
+> require 'valuation'
 
->>include Valuation
+> include Valuation
 
 *Cash Flows*
 
->> CashFlows.new([10,10,10], :i => 0.10).present_value
+> CashFlows.new([10,10,10], :i => 0.10).present_value
 
 => 27.3553719008264
 
+> CashFlows.new([10,10,10], :i => 0.10).future_value
+
+=> 33.1
+
+> CashFlows.new([-10,10,10]).irr
+
+=> 0.618033338439153
+
+*Interest Rate*
+
+> ir = InterestRate.new(0.10)
+
+> ir.yearly
+
+=> 0.10
+
+> ir.rate 
+
+=> 0.10
+
+> ir = InterestRate.new(0.01, :monthly)
+
+> rate.yearly
+
+=> 0.12682503013197
+
+> ir = InterestRate.new(0.12, :apr, :compounded => :monthly)
+
+> ir.monthly
+
+=> 0.01
+
+> ir.yearly
+
+=> 0.12682503013197

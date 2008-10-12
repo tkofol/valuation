@@ -18,6 +18,11 @@ class TestInterestRate < Test::Unit::TestCase
     assert_in_delta 0.00797411, rate.monthly, 0.0001
   end
   
+  def test_add_monthly_rate
+    rate = InterestRate.new(0.01, :monthly)
+    assert_in_delta 0.12682503013197, rate.yearly, 0.0001
+  end
+  
   def test_add_new_time_period
     InterestRate.add_time_periods({:once_in_a_blue_moon => 3.41666666666667})
     rate = InterestRate.new(0.10)
