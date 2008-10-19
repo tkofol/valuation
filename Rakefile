@@ -7,7 +7,7 @@ Echoe.new('valuation') do |p|
   p.version      = '0.0.1'
   p.author       = "Tim Kofol"
   p.email        = "tkofol@gmail.com"
-  p.summary      = "A Ruby Gem For Corporate Finance."
+  p.summary      = "A Ruby Gem For Corporate Finance Calculations."
 end
 
 
